@@ -1,0 +1,45 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: beige
+
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4a261;
+    color: white;
+}
+.btn {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+.edit-btn {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+}
+.delete-btn {
+    background-color: #d62828;
+    color: white;
+    border: none;
+}
+.add-btn {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+}
+ 
+    
+   

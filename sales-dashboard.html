@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Agent Dashboard</title>
+    <link rel="stylesheet" href="dashboard2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>        
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#">Leads</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <header>
+                <h1>Welcome, Sales Agent</h1>
+            </header>
+            <section class="stats">
+                <div class="stat-box">Leads: <span id="leads">25</span></div>
+                <div class="stat-box">Deals Closed: <span id="deals">10</span></div>
+                <div class="stat-box">Revenue: shs<span id="revenue">50,000</span></div>
+            </section>
+            
+            <div class="table-container">
+                <h2>Recent Leads</h2>
+                <table>
+                    <tr><th>Name</th>
+                    <th>Contact</th>
+                    <th>Status</th>
+                    <th>Value</th>
+                </tr>
+                    <tr><td>Marcus Bruno</td>
+                    <td>brunomarcus@gmail.com</td>
+                    <td>New</td>
+                    <td>shs50000</td>
+                </tr>
+                    <tr><td>Chiru Faith</td>
+                    <td>faithchiru@gmail.com</td>
+                    <td>In Progress</td>
+                    <td>shs70000</td>
+                </tr>
+                </table>
+            </div>
+
+            <div class="chart-container">
+                <h2>Sales Performance</h2>
+                <canvas id="salesChart"></canvas>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard2.js"?></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docum</title>
+    <link rel="stylesheet" href="display-sales.css">
+</head>
+<body> 
+    <h2>Sales Display</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Price per Unit</th>
+                <th>Total Sales</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="salesTable">
+            <tr>
+                <td>Cowpeas</td>
+                <td>10</td>
+                <td>2.50</td>
+                <td>25.00</td>
+                <td>
+                    <button class="btn edit-btn" onclick="editRow(this)">Edit</button>
+                    <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Beans</td>
+                <td>15</td>
+                <td>3.00</td>
+                <td>45.00</td>
+                <td>
+                    <button class="btn edit-btn" onclick="editRow(this)">Edit</button>
+                    <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Groundnuts</td>
+                <td>8</td>
+                <td>5.00</td>
+                <td>40.00</td>
+                <td>
+                    <button class="btn edit-btn" onclick="editRow(this)">Edit</button>
+                    <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Maize</td>
+                <td>20</td>
+                <td>1.50</td>
+                <td>30.00</td>
+                <td>
+                    <button class="btn edit-btn" onclick="editRow(this)">Edit</button>
+                    <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Soybeans</td>
+                <td>12</td>
+                <td>4.00</td>
+                <td>48.00</td>
+                <td>
+                    <button class="btn edit-btn" onclick="editRow(this)">Edit</button>
+                    <button class="btn delete-btn" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button cs="btn add-btn" onclick="addRow()">Add New Sale</button>
+    <script src="display-sales.js"></script>
+    
+</body>
+</html>

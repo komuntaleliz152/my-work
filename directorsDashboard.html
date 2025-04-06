@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karibu Grocery - Director Dashboard</title>
+  <link rel="stylesheet" href="directorsDashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yHjM9l+kdf0+OPQWnryYfYp0FPhWZKnHcEf6vhc3D+Z6Z+GULe+a4Uez7Gxy0zTRNPn0a+ebpuOj6lA7szOKVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <h2>Karibu</h2>
+    <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="#"><i class="fas fa-chart-line"></i> Sales</a>
+    <a href="#"><i class="fas fa-boxes"></i> Inventory</a>
+    <a href="#"><i class="fas fa-users"></i> Customers</a>
+    <a href="#"><i class="fas fa-coins"></i> Finance</a>
+    <a href="#"><i class="fas fa-file-alt"></i> Reports</a>
+    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+  </div>
+  <div class="main-content" id="main">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <header>
+      <h1>Karibu Grocery Store - Director's Dashboard</h1>
+    </header>
+    <div class="container">
+      <div class="card">
+        <h3>Daily Sales</h3>
+        <div class="value" id="dailySales">Loading...</div>
+      </div>
+      <div class="card">
+        <h3>Top-Selling Products</h3>
+        <ul id="topProducts"></ul>
+      </div>
+      <div class="card">
+        <h3>Low Stock Alerts</h3>
+        <ul id="lowStock"></ul>
+      </div>
+      <div class="card">
+        <h3>Customer Satisfaction Score</h3>
+        <div class="value" id="satisfaction">Loading...</div>
+      </div>
+      <div class="card">
+        <h3>Gross Profit Margin</h3>
+        <div class="value" id="grossProfit">Loading...</div>
+      </div>
+      <div class="card">
+        <h3>Outstanding Payments</h3>
+        <div class="value" id="payments">Loading...</div>
+      </div>
+      <div class="card">
+        <h3>Employee Attendance</h3>
+        <div class="value" id="attendance">Loading...</div>
+      </div>
+      <div class="card">
+        <h3>Promotion Campaign Performance</h3>
+        <div class="value" id="campaign">Loading...</div>
+      </div>
+    </div>
+  </div>
+  <script src="directorsDashboard.js"></script>
+  </body>
+  </html>

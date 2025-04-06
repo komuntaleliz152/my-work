@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karibu Grocery - Stock Management</title>
+    <link rel="stylesheet" href="stockmanagement.css">
+</head>
+<body>
+    <header>
+        <h1>Karibu Grocery Stock Management</h1>
+    </header>
+    <main>
+        <h2>Current Stock</h2>
+        <table id="stockTable">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity (Tonnes)</th>
+                    <th>Price (UGX)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cowpeas</td>
+                    <td>100</td>
+                    <td>UGX 5500</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="restockRow(this)">Restock</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maize</td>
+                    <td>200</td>
+                    <td>UGX 3000</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="restockRow(this)">Restock</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Beans</td>
+                    <td>150</td>
+                    <td>UGX 4400</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="restockRow(this)">Restock</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gnuts</td>
+                    <td>90</td>
+                    <td>UGX 7300</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="restockRow(this)">Restock</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Soybeans</td>
+                    <td>120</td>
+                    <td>UGX 6200</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="restockRow(this)">Restock</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Add New Item</h2>
+        <form id="stockForm">
+            <input type="text" id="itemName" placeholder="Item Name" required />
+            <input type="number" step="0.01" id="itemQuantity" placeholder="Quantity in Tonnes" required />
+            <input type="number" step="0.01" id="itemPrice" placeholder="Price in UGX" required />
+            <button type="submit">Add Item</button>
+        </form>
+    </main>
+    <script src="stockmanagement.js"></script>
+</body>
+</html>

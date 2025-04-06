@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karibu Grocery Limited - Procurement List</title>
+   <link rel="stylesheet" href="procumentlist.css">  
+</head>
+<body>
+
+  <h1>Karibu Grocery Limited - Procurement List</h1>
+
+  <table id="procurementTable">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Unit Price (UGX)</th>
+        <th>Total Price (UGX)</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <tr>
+        <td><input type="text" value="Cowpeas"></td>
+        <td><input type="number" min="1" value="10" onchange="updateTotal()"></td>
+        <td><input type="number" min="0" step="1" value="4500" onchange="updateTotal()"></td>
+        <td class="totalPrice">UGX 45000</td>
+        <td><button onclick="removeItem(this)">Remove</button></td>
+      </tr>
+      <tr>
+        <td><input type="text" value="Maize"></td>
+        <td><input type="number" min="1" value="50" onchange="updateTotal()"></td>
+        <td><input type="number" min="0" step="1" value="2000" onchange="updateTotal()"></td>
+        <td class="totalPrice">UGX 100000</td>
+        <td><button onclick="removeItem(this)">Remove</button></td>
+      </tr>
+      <tr>
+        <td><input type="text" value="Beans"></td>
+        <td><input type="number" min="1" value="30" onchange="updateTotal()"></td>
+        <td><input type="number" min="0" step="1" value="3500" onchange="updateTotal()"></td>
+        <td class="totalPrice">UGX 105000</td>
+        <td><button onclick="removeItem(this)">Remove</button></td>
+      </tr>
+      <tr>
+        <td><input type="text" value="Soybeans"></td>
+        <td><input type="number" min="1" value="20" onchange="updateTotal()"></td>
+        <td><input type="number" min="0" step="1" value="4000" onchange="updateTotal()"></td>
+        <td class="totalPrice">UGX 80000</td>
+        <td><button onclick="removeItem(this)">Remove</button></td>
+      </tr>
+      <tr>
+        <td><input type="text" value="Gnuts"></td>
+        <td><input type="number" min="1" value="25" onchange="updateTotal()"></td>
+        <td><input type="number" min="0" step="1" value="5500" onchange="updateTotal()"></td>
+        <td class="totalPrice">UGX 137500</td>
+        <td><button onclick="removeItem(this)">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button onclick="addItem()">Add Item</button>
+
+  <div id="total">Total: UGX 467500</div>
+  <script src="procumentlist.js"></script>
+</body>
+</html>
